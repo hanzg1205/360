@@ -1,0 +1,440 @@
+body,ul,li {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  background: #f4f4f4;
+}
+a{
+  text-decoration: none;
+}
+*{
+  box-sizing: border-box;
+}
+.swiper-container {
+  width: 100%;
+}
+.swiper-slide img{
+  width: 100%;
+  height:auto;
+}
+.qlink{
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  overflow: hidden;
+  padding: 15px 0
+
+}
+.qlink a {
+  width: 20%;
+  float: left;
+  color: #666;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+.qlink a img {
+  border-radius:10px;
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+.qlink a span {
+  display: block;
+  margin-top: 7px;
+}
+.news{
+  padding:12px 15px;
+  background: #fff;
+  & .icon{
+    border-right: 1px solid #e1e1e1;
+    float: left;
+    font-size: 12px;
+    height: 16px;
+    padding-right: 5px;
+    & img{
+      font-size: 12px;
+      height: 16px;
+      overflow: hidden;
+      width: 63px;
+    }
+  }
+  & .text{
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    & .mark{
+      color: #f66;
+      float: left;
+      font-style: normal;
+      padding: 0 4px;
+      font-size: 14px;
+    }
+    & span{
+      display: block;
+      height: 14px;
+      line-height: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      white-space: nowrap;
+      color:#666;
+      font-size:14px;
+    }
+  }
+}
+
+.buybox{
+  width:100%;
+  margin-top:10px;
+  background: #fff;
+  & .buy-menu{
+    border-bottom: 1px solid #eaeaea;
+    clear: both;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 15px;
+    position: relative;
+    & .buyred {
+      color: #f55;
+      display: inline-block;
+      font-size: 15px;
+    }
+    & .countdown {
+      color: #222;
+      display: inline-block;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+    & .session {
+      color: #222;
+      font-size: 14px;
+      position: absolute;
+      right: 15px;
+      top: 0;
+    }
+  }
+  & .buy{
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    & .plist{
+      background: #fff;
+      border-bottom: 1px solid #eaeaea;
+      overflow: hidden;
+      width: 33.3333333%;
+      float: left;
+      & a{
+        margin: 10px 0;
+        padding: 0;
+        width: auto;
+        border-right: 1px solid #f1f1f1;
+        text-align: center;
+        display: block;
+        & .pimg{
+          display: block;
+          position: relative;
+          text-align: center;
+          & img{
+            width:100%;
+            height:auto;
+          }
+        }
+        & .title{
+          color: #555;
+          display: block;
+          font-size: 13px;
+          height: 16px;
+          line-height: 16px;
+          margin: 5px 5px 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        & .price{
+          color: #f55;
+          display: block;
+          font-size: 14px;
+          margin: 5px 5px 0;
+          text-align: center
+        }
+        & .original-price {
+          color: #aaa;
+          font-size: 10px;
+          font-style: normal;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}
+/* 明星单品 */
+.floor-title {
+  color: #666;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  width: 100%;
+}
+.star{
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  overflow: hidden;
+  & li{
+    border-right: 1px solid #f1f1f1;
+    padding: 15px 0 7px;
+    text-align: center;
+    width: 50%;
+    background: #fff;
+    overflow: hidden;
+    float: left;
+    & a{
+      color:#666;
+      display: block;
+      & .star-tips {
+        border: 1px solid #e1e1e1;
+        border-radius: 20px;
+        display: inline-block;
+        margin: 0 20px;
+        overflow: hidden;
+        padding: 4px 9px 4px 5px;
+        vertical-align: middle;
+        & img{
+          float: left;
+          height: 17px;
+          overflow: hidden;
+          width: 17px;
+        }
+        & em{
+          color: #222;
+          float: left;
+          font-style: normal;
+          font-size: 13px;
+          height: 17px;
+          line-height: 17px;
+          margin-left: 5px;
+        }
+      }
+      & .pimg{
+        display: block;
+        margin: 7px 10px 0;
+        position: relative;
+        text-align: center;
+        & img{
+          height: 150px;
+          margin: 0 auto;
+          overflow: hidden;
+          width: 150px
+        }
+      }
+      & .start-title {
+        color: #555;
+        display: block;
+        font-size: 13px;
+        height: 16px;
+        line-height: 16px;
+        margin: 7px 8px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      & .start-price {
+        color: #f55;
+        display: block;
+        font-size: 14px;
+        margin: 5px 8px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+.star li:last-child{
+  border-right:none;
+}
+
+/*  */
+.level a{
+  background: #fff;
+  margin-bottom: 10px;
+  color:#666;
+  display: block;
+  padding-bottom: 1px;
+  & span img{
+    height: auto;
+    width: 100%;
+  }
+  & .ds-1 {
+  display: block;
+  font-size: 14px;
+  margin-top: 12px;
+  padding:0 15px;
+  }
+  & .ds-2 {
+    color: #999;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding:0 15px;
+  }
+}
+/* 手机 */
+.bigimg img{
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.flexbox{
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  overflow: hidden;
+  & li{
+    border-right: 1px solid #f1f1f1;
+    padding: 15px 0 7px;
+    width: 50%;
+    float: left;
+    background: #fff;
+    & a{
+      display: block;
+      color:#666;
+      & .pimg{
+        margin: 7px 10px 0;
+        position: relative;
+        text-align: center;
+        & img{
+          height: 150px;
+          margin: 0 auto;
+          overflow: hidden;
+          width: 150px;
+        }
+      }
+      & .start-title{
+        color: #555;
+        font-size: 13px;
+        height: 16px;
+        line-height: 16px;
+        margin: 7px 10px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      & p{
+        color: #999;
+        font-size: 12px;
+        height: 14px;
+        line-height: 14px;
+        margin: 4px 10px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+      }
+      & .start-price{
+        color: #f55;
+        font-size: 14px;
+        margin: 5px 10px 0;
+      }
+    }
+  }
+}
+/* 更多商品 */
+.morepro {
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+  color: #666;
+  display: block;
+  font-size: 12px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* 尾部 */
+.mod-help {
+  background: #fff;
+  color: #5c5c5c;
+  font-size: 14px;
+  line-height: 3em;
+  text-align: center;
+  & .mod{
+    padding: 13px 0;
+    overflow: hidden;
+    & .item {
+      border-right: solid 1px #d6d6d6;
+      color: #666;
+      font-size: 11px;
+      width:33.3333%;
+      float: left;
+      background: #fff;
+      & b{
+        border: 1px solid #aaa;
+        border-radius: 50px;
+        color: #666;
+        display: block;
+        font-size: 12px;
+        height: 31px;
+        line-height: 31px;
+        margin: 0 auto;
+        width: 31px;
+      }
+      & span{
+        display: block;
+        height: 12px;
+        line-height: 12px;
+        margin-top: 7px;
+      }
+    }
+  }
+  & .number{
+    border-top: 1px solid #d6d6d6;
+    font-size: 10px;
+    line-height: 40px;
+    & p{
+      font-size: 10px;
+      line-height: 10px;
+      padding: 10px;
+    }
+  }
+}
+.mod .item:last-child{
+  border-right:none;
+}
+.ww{
+  width: 100%;
+  height:53px;
+}
+.header{
+  background: #fff;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  bottom: 0;
+  height: 53px;
+  left: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1111;
+  & .flex{
+    width:25%;
+    height:100%;
+    float: left;
+    text-align: center;
+    line-height: 53px;
+    & span{
+      display:block;
+      line-height: 25px;
+    }
+  }
+}
+.flex span:last-child{
+  font-size: 12px;
+}
